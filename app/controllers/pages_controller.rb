@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
   def home
-    @zombies = Zombie.all
+    @zombies = Zombie.in_name_order
   end
 end
