@@ -1,3 +1,6 @@
+%p= link_to 'Zombies', root_path
+
 %h1= @zombie.name
 %p= @zombie.bio
 
+%p= link_to 'Edit', edit_zombie_path(@zombie)
